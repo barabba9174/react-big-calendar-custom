@@ -22,7 +22,8 @@ let Selectable = React.createClass({
             `\nend: ${slotInfo.end.toLocaleString()}` +
             `\naction: ${slotInfo.action}`
           )}
-        />
+          timeIndicatorClass="prova"
+        ><span>test</span></BigCalendar>
       </div>
     )
   }

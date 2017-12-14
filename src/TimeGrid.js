@@ -34,7 +34,8 @@ export default class TimeGrid extends Component {
     min: PropTypes.instanceOf(Date),
     max: PropTypes.instanceOf(Date),
     now: PropTypes.instanceOf(Date),
-
+    children: PropTypes.element,
+    timeIndicatorClass: PropTypes.string,
     scrollToTime: PropTypes.instanceOf(Date),
     eventPropGetter: PropTypes.func,
     dayPropGetter: PropTypes.func,
@@ -65,8 +66,6 @@ export default class TimeGrid extends Component {
 
     messages: PropTypes.object,
     components: PropTypes.object.isRequired,
-    children: PropTypes.element,
-    timeIndicatorClass: PropTypes.string
   }
 
   static defaultProps = {
